@@ -13,6 +13,7 @@ class Triangle
       :equilateral
     elsif @b==@c || @a==@b || @c==@a 
       :isosceles
+    elsif 
     elsif @a <= 0 || @b <= 0 || @c <= 0
       begin
         raise TriangleError
