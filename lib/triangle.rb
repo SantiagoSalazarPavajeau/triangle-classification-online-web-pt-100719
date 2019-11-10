@@ -19,6 +19,7 @@ class Triangle
       raise TriangleError
     elsif @a + @b + @c = 0
       raise TriangleError
+    else
     else 
       :scalene
     end
