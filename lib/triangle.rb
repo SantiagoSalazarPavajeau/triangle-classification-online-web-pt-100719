@@ -10,9 +10,9 @@ class Triangle
   
   def kind
     @a, @b, @c = [@a, @b, @c].sort
-    raise TriangleError if a <= 0 or a + b <= c
-    return :equilateral if a == c
-    return :isosceles if a == b or b == c
+    raise TriangleError if @a <= 0 or @a + @b <= @c
+    return :equilateral if @a == @c
+    return :isosceles if @a == @b or @b == @c
     return :scalene
     # if @a == @b && @a == @c && @b == @c
     #   :equilateral
