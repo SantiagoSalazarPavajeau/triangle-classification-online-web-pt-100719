@@ -9,14 +9,16 @@ class Triangle
   end
   
   def kind
-    if ((@a == @b) && (@a == @c) && (@b == @c))
+    if @a == @b && @a == @c && @b == @c
       :equilateral
     elsif @b==@c || @a==@b || @c==@a 
       :isosceles
     elsif @a <= 0 || @b <= 0 || @c <= 0
-        raise TriangleError
+      raise TriangleError
     elsif @a >= @b+@c || @c >= @b+@a || @b >= @a+@c
-        raise TriangleError
+      raise TriangleError
+    elsif @a + @b + @c = 0
+      raise TriangleError
     else 
       :scalene
     end
