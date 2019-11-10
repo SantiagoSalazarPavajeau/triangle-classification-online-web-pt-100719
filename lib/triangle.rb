@@ -19,7 +19,12 @@ class Triangle
       rescue TriangleError => error
           puts error.message
       end
-    elsif 
+    elsif @a >= @b+@c || @c >= @b+@a || @b >= @a+@c
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+          puts error.message
+      end
     end
   end
   
