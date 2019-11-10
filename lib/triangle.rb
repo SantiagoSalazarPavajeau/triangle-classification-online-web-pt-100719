@@ -16,9 +16,9 @@ class Triangle
     # return :scalene
     if @a == @c
       :equilateral
-    elsif @a == @b || @b == @c 
+    elsif @a == @b or @b == @c 
       :isosceles
-    elsif @a <= 0 || @a + @b <= @c
+    elsif @a <= 0 or @a + @b <= @c
       raise TriangleError
     else 
       :scalene
