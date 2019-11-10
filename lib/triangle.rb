@@ -16,11 +16,7 @@ class Triangle
     elsif @a <= 0 || @b <= 0 || @c <= 0
         raise TriangleError
     elsif @a >= @b+@c || @c >= @b+@a || @b >= @a+@c
-      begin
         raise TriangleError
-      rescue TriangleError => error
-          puts error.message
-      end
     else 
       :scalene
     end
