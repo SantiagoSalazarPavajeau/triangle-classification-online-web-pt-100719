@@ -15,7 +15,7 @@ class Triangle
       :isosceles
     elsif @a <= 0 || @b <= 0 || @c <= 0
         raise TriangleError
-    elsif @a == 0 && @b == 0 && @c == 0
+    elsif @a == nil && @b == nil && @c == nil
         raise TriangleError    
     elsif @a >= @b+@c || @c >= @b+@a || @b >= @a+@c
         raise TriangleError
